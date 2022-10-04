@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SombrerosLaPatrona</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/nav-bar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    <header>
+        <div class="row">
+            <div class="col-10 pt-2 text-center">
+                <h3 class="color5">
+                    Sombreros la patrona
+                </h3>
+            </div>
+            <div class="col-1">
+                <div class="icon-item">
+                    <a asp-page="./Form-Usuario">
+                        <img class="box-shadow-hover" src="icons/add-user.png" width="32">
+                    </a>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="icon-item">
+                    <a asp-page="./FormFactura">
+                        <img class="box-shadow-hover" src="icons/factura.png" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="line-limiter-nav-bar"/>
+        <nav class="navbar navbar-light bg-light" style="background-color: #e3f2fd;">
+            <div class="custom-nav-item active">
+                <a class="nav-link" asp-page="/Index">Inicio</a>
+            </div>
+            <div class="custom-nav-item">
+                <a class="nav-link" asp-page="/Sombreros">Sombreros</a>
+            </div>
+            <div class="custom-nav-item">
+                <a class="nav-link" asp-page="/Ponchos">Ponchos</a>
+            </div>
+            <div class="custom-nav-item">
+                <a class="nav-link" asp-page="/Gorras">Gorras</a>
+            </div>
+            <div class="custom-nav-item">
+                <a class="nav-link" asp-page="/Mochilas">Mochilas Wayu</a>
+            </div>
+            <div class="custom-nav-item">
+                <a class="nav-link" asp-page="/Ayuda">Ayuda</a>
+            </div>
+        </nav>
+        <hr class="line-limiter-nav-bar" />
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3 width-100per">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="text">
+            <h3>Numero de contacto: 3116528996</h3>
+            <h3>Dirección: Crra.14 #10-18 (Avenida Jimenez)</h3>
+        </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

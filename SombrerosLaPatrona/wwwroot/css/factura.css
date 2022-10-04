@@ -1,0 +1,17 @@
+.form-container{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+}
+.form-item{
+    padding: 0,4rem 1px;
+}
+.form-item input{
+    flex-wrap: nowrap;
+    border-radius: 3px;
+    border: none;
+    
+}
+
+

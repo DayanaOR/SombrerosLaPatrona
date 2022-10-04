@@ -1,0 +1,36 @@
+﻿@page
+@model SombrerosLaPatrona.Pages.GorrasModel
+
+<div class="card-container">
+    @foreach (var Gorras in @Model.Gorras)
+    {
+        <div class="card">
+            <div class="card-content" id="card_@Gorras.Id">
+                <div class="text-center">
+                    <img src="@Gorras.Img" alt="Gorra" class="img-card">
+                </div>
+                <hr>
+                <div class="">
+                    <div class="">
+                        @Gorras.Titulo
+                    </div>
+                    <div class="">
+                        @Gorras.Descripcion
+                    </div>
+                    <div class="">
+                        V.Unitario: $ @Gorras.ValorUnitario, V.Detal: $ @Gorras.ValorDetal
+                    </div>
+                    <div class="text-right">
+                        Carrito
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/card.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+}
+

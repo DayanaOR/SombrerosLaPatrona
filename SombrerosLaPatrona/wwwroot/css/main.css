@@ -1,0 +1,158 @@
+:root {
+    --color1: #412f3e;
+    --color2: #5e4a4a;
+    --color3: #966c73;
+    --color4: #caa2a6;
+    --color5: #d8c2bc;
+}
+
+a:link {
+    color: var(--color5);
+}
+
+a:visited{
+    color: var(--color5);
+}
+
+a:hover{
+    color: var(--color4);
+}
+a:active{
+    color: rgb(88, 51, 88);
+}
+
+body {
+    margin: -3 !important;
+    background-color: var(--color1);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.main-container {
+    border: 1px solid var(--color1);
+    background-color: var(--color1);
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    color:var(--color5);
+    
+}
+
+
+.contenido {
+    padding: 0.5rem 0;
+    height: 55%;
+
+}
+
+.footer {
+    height: 12%;
+    border: 1px solid var(--color1);
+    ;
+}
+.text {
+    color: var(--color5);
+}
+
+.Style {
+    color: var(--color5);
+}
+
+.color1 {
+    color: var(--color1);
+}
+
+.color2 {
+    color: var(--color2);
+}
+
+.color3 {
+    color: var(--color3);
+}
+
+.color4 {
+    color: var(--color4);
+}
+
+.color5 {
+    color: var(--color5);
+}
+
+.container {
+    border: 1px solid var(--color1);
+    background-color: var(--color1);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    
+}
+
+.container-item {
+    border: 1px solid var(--color1);
+    background-color: var(--color1);
+    text-align: center;
+    width: 16.5%;
+    
+}
+
+.title-item {
+
+    width: 79%;
+    color: var(--color5);
+}
+
+.icon-item {
+    width: 10%;
+    padding-top: 1.2rem;
+    cursor: pointer;
+    
+}
+
+.box-shadow-hover:hover {
+    box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 75%);
+      
+}
+
+.description {
+    height: 300px;
+    padding: 124px;
+    background-color: var(--color1);
+    text-align: center;
+}
+
+.pt-5r {
+    padding-top: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.border-bottom{
+    border-bottom: 1px solid var(--color3);
+}
+
+.width-100per{
+    width: 100%;
+}
+
+.custom-nav-item{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.line-limiter-nav-bar {
+    height: 4px !important;
+    color: var(--color5);
+}

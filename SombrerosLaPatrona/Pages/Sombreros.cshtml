@@ -1,0 +1,39 @@
+﻿@page
+@model SombrerosLaPatrona.Pages.SombrerosModel
+
+<div class="card-container">
+    @foreach (var sombrero in Model.Sombreros)
+    {
+        <div class="card">
+            <div class="card-content" id="card_@sombrero.Id">
+                <div class="text-center">
+                    @*<img src="@sombrero.Img" alt="SombreroVolteado" class="img-card">*@
+                    <img class="box-shadow-hover img-card" src="~/imagenes/Sombreros/Sombrero Chaplin.jpg" >
+                </div>
+                <hr>
+                <div class="">
+                    <div class="">
+                        @sombrero.Titulo
+                    </div>
+                    <div class="">
+                        @sombrero.Descripcion
+                    </div>
+                    <div class="">
+                        V.Unitario: $ @sombrero.ValorUnitario, V.Detal: $ @sombrero.ValorDetal
+                    </div>
+                    <div>
+                        Talla: @sombrero.Talla
+                    </div>
+                    <div class="text-right">
+                        Carrito
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Styles{
+    <link rel="stylesheet" href="~/css/card.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+}

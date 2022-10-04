@@ -1,0 +1,28 @@
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 27.5%;
+    height: auto;
+    padding: 15px 10px;
+    border-radius: 20px;
+    background-color: var(--color4);
+    box-shadow: 2px 5px 5px 0px #686868;
+    margin: 6px;;
+}
+
+.card-content{
+    width: 100%;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+
+.img-card{
+    height: 153px;
+    width: 177px;
+}

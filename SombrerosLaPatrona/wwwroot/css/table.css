@@ -1,0 +1,36 @@
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f6b9b9;
+}
+
+.td-cod {
+    width: 8%;
+}
+
+.td-nombre {
+    width: 48%;
+}
+
+.td-cantidad {
+    width: 17%;
+}
+
+.td-valorunitario {
+    width: 17%;
+}
+
+.td-valortotal {
+    width: 17%;
+}
